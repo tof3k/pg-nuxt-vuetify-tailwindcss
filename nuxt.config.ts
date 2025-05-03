@@ -1,6 +1,8 @@
 export default defineNuxtConfig({
   ssr: false,
-  target: 'static',
+  nitro: {
+    preset: 'static'
+  },
   css: ['vuetify/styles'],
   build: {
     transpile: ['vuetify']
